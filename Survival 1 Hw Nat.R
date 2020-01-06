@@ -1,4 +1,5 @@
 #Survival Analysis HW 1
+#Code based off of code provided by Dr. Aric LaBarr
 
 #Importing Data
 library(sas7bdat)
