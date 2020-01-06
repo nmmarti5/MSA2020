@@ -1,3 +1,4 @@
+#Completed for Dr. Shaina Race's Data Mining Course with assistance from code she provided 
 options(digits = 2)
 #Added a binary for term or not and I deleted y and next product.
 TermData <- read.csv(file="C:/Users/17708/Documents/R/TermData.csv", header=TRUE, sep=",")
