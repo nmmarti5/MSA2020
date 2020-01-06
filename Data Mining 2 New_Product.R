@@ -1,3 +1,4 @@
+#Completed for Dr. Shaina Race's Data Mining Course with assistance from code she provided 
 options(digits = 2)
 #Removed Y var.
 bank <- read.csv(file="C:/Users/17708/Documents/R/bankdata_new2.csv", header=TRUE, sep=",")
