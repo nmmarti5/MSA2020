@@ -1,0 +1,15 @@
+*/This code was produced for an assignment in my optimization class. Code assistance provided by Dr. Susan Simmons */;
+proc optmodel;
+var S>=0, C>=0, I>=0, L>=0, T>=0, V>=0;
+max Profit = 150*S + 225*C + 250*I + 500*L + 400*T + 200*V;
+con Total: S + C + I + L + T + V = 1200000;
+con SC: S + C <= 620000;
+con IL: I + L <= 400000;
+con TV: T + V <= 275000;
+con Half: .5*S + .5*C - .5*I -.5*L >= 0;
+con Fuel: 13*S + 7*C -12*I -15*L -7*T -2*V >= 0;
+solve with lp;
+print S C I L T V;
+print S.RC C.RC I.RC L.RC T.RC V.RC;
+print Total.dual SC.dual IL.dual TV.dual Half.dual Fuel.dual;
+quit;
